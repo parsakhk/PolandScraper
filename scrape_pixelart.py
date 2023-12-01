@@ -16,6 +16,14 @@ chrome_options.add_argument("--headless")
 wd = webdriver.Chrome(options=chrome_options)
 website_url = "https://www.polandballwiki.com/wiki/" + compacted_with_url + 'ball'
 
+
+# Specifying the special balls link.
+if name_of_ball == 'Reichtangle':
+    website_url = "https://www.polandballwiki.com/wiki/Reichtangle"
+elif name_of_ball == 'Singapore':
+    website_url = "https://www.polandballwiki.com/wiki/Tringapore"
+
+# Opening up the browser and find the image.
 wd.get(website_url)
 print('opened up the browser...')
 time.sleep(3)
