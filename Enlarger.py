@@ -5,7 +5,7 @@ multiplier = int(input('How much do you want to multiply height and width of the
 choosen_img = str(input('Write the image that you want to resize: '))
 
 if multiplier < 4:
-    im = Image.open(f'results\{choosen_img}.png')
+    im = Image.open(f'results\pixies\{choosen_img}\{choosen_img}.png')
 
     width, height = im.size
 

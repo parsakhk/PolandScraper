@@ -35,11 +35,17 @@ image_urls = [img.get_attribute('src') for img in image_tags]
 time.sleep(3)
 ### generate about me and creating results folder.
 os.mkdir('results/')
+resultsPath = 'results/'
+directoryPath = f'pixies/{name_of_ball}'
+actualResultpath = os.path.join(resultsPath, directoryPath)
+if os.path.isdir(actualResultpath) != True:
+    os.mkdir(actualResultpath)
+    
 ### download images.
 print('Downloading...')
 time.sleep(2)
 response = requests.get(image_urls[0], stream=True)
-with open(f'results/{name_of_ball}.png', 'wb') as f:
+with open(f'results/pixies/{name_of_ball}/{name_of_ball}.png', 'wb') as f:
     for chunk in response.iter_content(chunk_size=128):
         f.write(chunk)
         print(f'Pixel art of the country: {name_of_ball} has been downloaded successfully.')
