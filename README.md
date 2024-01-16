@@ -1,5 +1,11 @@
 
-# Poland Escraper
+<h1 align="center">
+    Poland Escraper
+</h1>
+
+![Developed by Badge](https://img.shields.io/badge/Dveloped_by-Parsakhk-blue?logo=windowsterminal)
+![Powerd by Badge](https://img.shields.io/badge/Powerd_by-python-orange?logo=python)
+
 
 **Poland Escraper** is a tool that allows the dex community and those who make dex bots. such as **Empireballs**👑 and **Ballsdex**🎊, Scrape and download🔽 images easily and get them to use them in their bots🤖.
 
